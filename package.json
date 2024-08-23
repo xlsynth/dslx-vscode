@@ -19,6 +19,9 @@
     "engines": {
         "vscode": "^1.78.0"
     },
+    "activationEvents": [
+        "onLanguage:dslx"
+    ],
     "main": "./out/extension",
     "contributes": {
         "configuration": {
