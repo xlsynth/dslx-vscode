@@ -245,7 +245,7 @@
         },
         {
             "include": "#variables"
-        }
+        },
     ],
     "repository": {
         "comments": {
@@ -820,37 +820,6 @@
                 }
             }
         },
-        "lifetimes": {
-            "patterns": [
-                {
-                    "comment": "named lifetime parameters",
-                    "match": "(['])([a-zA-Z_][0-9a-zA-Z_]*)(?!['])\\b",
-                    "captures": {
-                        "1": {
-                            "name": "punctuation.definition.lifetime.dslx"
-                        },
-                        "2": {
-                            "name": "entity.name.type.lifetime.dslx"
-                        }
-                    }
-                },
-                {
-                    "comment": "borrowing references to named lifetimes",
-                    "match": "(\\&)(['])([a-zA-Z_][0-9a-zA-Z_]*)(?!['])\\b",
-                    "captures": {
-                        "1": {
-                            "name": "keyword.operator.borrow.dslx"
-                        },
-                        "2": {
-                            "name": "punctuation.definition.lifetime.dslx"
-                        },
-                        "3": {
-                            "name": "entity.name.type.lifetime.dslx"
-                        }
-                    }
-                }
-            ]
-        },
         "macros": {
             "patterns": [
                 {
@@ -1088,30 +1057,6 @@
                             "name": "punctuation.definition.string.raw.dslx"
                         }
                     }
-                },
-                {
-                    "comment": "characters and bytes",
-                    "name": "string.quoted.single.char.dslx",
-                    "begin": "(b)?(')",
-                    "beginCaptures": {
-                        "1": {
-                            "name": "string.quoted.byte.raw.dslx"
-                        },
-                        "2": {
-                            "name": "punctuation.definition.char.dslx"
-                        }
-                    },
-                    "end": "'",
-                    "endCaptures": {
-                        "0": {
-                            "name": "punctuation.definition.char.dslx"
-                        }
-                    },
-                    "patterns": [
-                        {
-                            "include": "#escapes"
-                        }
-                    ]
                 }
             ]
         },
@@ -1134,7 +1079,7 @@
                 {
                     "comment": "variables",
                     "name": "variable.other.dslx",
-                    "match": "\\b(?<!(?<!\\.)\\.)(?:r#(?!(crate|[Ss]elf|super)))?[a-z0-9_]+\\b"
+                    "match": "\\b(?<!(?<!\\.)\\.)(?:r#(?!(crate|[Ss]elf|super)))?[a-z0-9_]+(?:')?\\b"
                 }
             ]
         }

@@ -2,16 +2,16 @@
     "name": "dslx",
     "displayName": "XLS DSLX Language Server",
     "description": "XLS DSLX using DSLX language server",
-    "author": "Kamyar Mohajerani",
+    "author": "XLS Authors (originally: Kamyar Mohajerani)",
     "license": "Apache 2.0",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "preview": true,
     "icon": "images/xls_antmicro_128x128.png",
     "repository": {
         "type": "git",
-        "url": "https://github.com/kammoh/dslx-vscode"
+        "url": "https://github.com/xlsynth/dslx-vscode"
     },
-    "publisher": "kamyar",
+    "publisher": "xls-authors",
     "categories": [],
     "keywords": [
         "multi-root ready"
