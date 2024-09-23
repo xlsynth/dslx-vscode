@@ -26,7 +26,7 @@
     "contributes": {
         "configuration": {
             "type": "object",
-            "title": "Example configuration",
+            "title": "DSLX Language Server",
             "properties": {
                 "dslx.languageServerPath": {
                     "type": "string",
