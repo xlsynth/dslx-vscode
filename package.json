@@ -4,7 +4,7 @@
     "description": "XLS DSLX using DSLX language server",
     "author": "XLS Authors (originally: Kamyar Mohajerani)",
     "license": "Apache 2.0",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "preview": true,
     "icon": "images/xls_antmicro_128x128.png",
     "repository": {
