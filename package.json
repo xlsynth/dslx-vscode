@@ -1,8 +1,8 @@
 {
-    "name": "dslx",
-    "displayName": "XLS DSLX Language Server",
+    "name": "dslx-cdleary",
+    "displayName": "XLS DSLX Language Server (by cdleary)",
     "description": "XLS DSLX using DSLX language server",
-    "author": "XLS Authors (originally: Kamyar Mohajerani)",
+    "author": "Chris Leary (originally: Kamyar Mohajerani)",
     "license": "Apache 2.0",
     "version": "0.0.3",
     "preview": true,
@@ -11,7 +11,7 @@
         "type": "git",
         "url": "https://github.com/xlsynth/dslx-vscode"
     },
-    "publisher": "xls-authors",
+    "publisher": "cdleary",
     "categories": [],
     "keywords": [
         "multi-root ready"
@@ -89,7 +89,7 @@
         "@typescript-eslint/eslint-plugin": "^6.7.0",
         "@typescript-eslint/parser": "^6.7.0",
         "@vscode/test-electron": "^2.3.3",
-        "@vscode/vsce": "^2.22.0",
+        "@vscode/vsce": "^2.32.0",
         "esbuild": "^0.18.20",
         "eslint": "^8.44.0",
         "eslint-config-prettier": "^8.8.0",
