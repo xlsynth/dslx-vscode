@@ -1,6 +1,7 @@
 out
 node_modules
 .vscode-test
+*.sw[opqrs]
 
 # Packaged extension files.
 *.vsix

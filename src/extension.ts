@@ -23,13 +23,20 @@ export function activate(context: ExtensionContext) {
     const binary_path: string = config.get('languageServerPath') as string;
     const dslx_path: string = config.get('dslxPath') as string;
     const stdlib_path: string = config.get('stdlibPath') as string;
+    const extra_flags: string = config.get('languageServerExtraFlags') as string;
+
+    let args = ["--dslx_path", dslx_path, "--stdlib_path", stdlib_path];
+    if (extra_flags) {
+        args.push(...extra_flags.split(" "));
+    }
+    args.push("--");
 
     // If the extension is launched in debug mode then the debug server options are used
     // Otherwise the run options are used
     const serverOptions: Executable = {
         command: binary_path,
         transport: TransportKind.stdio,
-        args: ["--dslx_path", dslx_path, "--stdlib_path", stdlib_path, "--"],
+        args: args,
     };
 
     // Options to control the language client

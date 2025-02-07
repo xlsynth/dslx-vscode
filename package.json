@@ -45,6 +45,12 @@
                     "default": "xls/dslx/stdlib",
                     "scope": "machine-overridable",
                     "description": "Path to DSLX standard library files"
+                },
+                "dslx.languageServerExtraFlags": {
+                    "default": "",
+                    "type": "string",
+                    "scope": "machine-overridable",
+                    "description": "Any extra flags to pass to the language server binary"
                 }
             }
         },
@@ -79,6 +85,7 @@
         "package": "vsce package -o dslx.vsix"
     },
     "dependencies": {
+        "vsce": "^2.15.0",
         "vscode-languageclient": "^8.1.0"
     },
     "devDependencies": {
@@ -89,7 +96,7 @@
         "@typescript-eslint/eslint-plugin": "^6.7.0",
         "@typescript-eslint/parser": "^6.7.0",
         "@vscode/test-electron": "^2.3.3",
-        "@vscode/vsce": "^2.22.0",
+        "@vscode/vsce": "^2.32.0",
         "esbuild": "^0.18.20",
         "eslint": "^8.44.0",
         "eslint-config-prettier": "^8.8.0",
